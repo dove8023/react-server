@@ -25,8 +25,8 @@ react(app, { views: viewpath });
 // imports babel runtime for JSX views, warning: live transpiling
 // best to precompile in production deploys for perf + reliability
 register({
-  presets: [ 'es2015', 'react' ],
-  extensions: [ '.jsx' ],
+  presets: ['es2015', 'react'],
+  extensions: ['.jsx'],
 });
 
 app.use(staticCache(assetspath));
@@ -41,5 +41,5 @@ app.use(function* () {
   });
 });
 
-app.listen(3000);
-console.log('server start listen at 3000');
+app.listen(3005);
+console.log('server start listen at 3005');
